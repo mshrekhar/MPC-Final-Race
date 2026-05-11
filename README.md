@@ -135,7 +135,17 @@ ros2 run frenet_mpc record_wp
 
 Subscribes to `/pf/viz/inferred_pose` (particle filter). Each row is `x, y, yaw`. The `maps/` folder contains several CSV files from different recording sessions — they are independent of each other. Point `centerline_file` at whichever one you want to use.
 
-### 5. Run
+### 5. Launch the EKF odometry stack
+
+The MPC controller subscribes to `/odom_ekf`, which is produced by the [`sensors_bringup`](https://github.com/MLN-MNJ/F1TENTH-EKF/tree/main/sensors_bringup) package. It fuses LiDAR ICP odometry, VESC wheel odometry, and IMU data via `robot_localization`.
+
+```bash
+ros2 launch sensors_bringup sensors_bringup.launch.py
+```
+
+Keep the car **completely still** for ~5 seconds during gyro bias calibration before driving.
+
+### 6. Run
 
 ```bash
 ros2 launch frenet_mpc frenet_mpc.launch.py \
