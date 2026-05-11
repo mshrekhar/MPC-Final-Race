@@ -17,7 +17,7 @@ Frenet-frame Model Predictive Controller for F1TENTH autonomous racing, solved i
 
 ## Demo
 
-[Watch on Google Drive](https://drive.google.com/file/d/15UrSY8A5Fi8rTqBKjXRQ2N0nWXoayEFX/view?usp=sharing)
+[Watch on Google Drive](https://drive.google.com/file/d/1zbCONLosUmZUjjdu5uyIAF7fB7yYjxUH/view?usp=sharing)
 
 ---
 
