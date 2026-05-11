@@ -1,0 +1,54 @@
+frenet_mpc:
+  ros__parameters:
+    centerline_file: "/home/nvidia/f1tenth_ws/src/frenet_mpc/maps/wp-neel-tuned.csv"
+    pose_topic: "/pf/viz/inferred_pose"
+    odom_topic: "/odom_ekf"
+    drive_topic: "/drive"
+    scan_topic: "/scan"
+    map_topic: "/map"
+    global_frame: "map"
+
+    # ── Speed profile ──
+    target_speed: 5.0
+    min_speed_cmd: 0.30
+    max_speed: 8.0
+    resample_ds: 0.05
+    v_min_corner: 2.5
+    curvature_speed_gain: 1.8
+    max_search_dist_warn: 1.5
+    reverse_centerline: false
+
+    # ── Steering constraints ──
+    max_steering_angle: 0.6189
+    max_steering_rate: 3.2
+
+    # ── Solver tuning ──
+    rti_iterations: 3
+    max_brake_decel: 5.0
+    max_accel_forward: 4.0
+
+    # ── Obstacle avoidance ──
+    enable_obstacle_avoidance: true
+    obs_safety_margin: 0.15        # was 0.10 — bit more clearance around opponents
+    obs_car_half_width: 0.272      # was 0.16 — actual car half-width (10.7")
+    obs_car_half_length: 0.25      # leave — you didn't give length
+    obs_detect_range: 6.0
+    obs_cluster_dist: 0.20
+    obs_min_cluster_pts: 5
+    obs_side_commit_time: 0.5
+    obs_map_diff_thresh: 0.20
+    track_width_default: 1.65      # was 1.20 — narrowest section (65")
+    track_wall_margin: 0.30        # was 0.18 — car_half_width (0.272) + safety (~0.03)
+    emergency_brake_speed: 0.0
+
+    # ── MPC cost weights ──
+    w_ey: 35.0
+    w_epsi: 15.0
+    w_v: 3.0
+    w_delta: 12.0
+    w_delta_dot: 65.0
+    w_a: 0.20
+    w_ey_e: 45.0
+    w_epsi_e: 18.0
+    w_v_e: 3.0
+    w_delta_e: 1.0
