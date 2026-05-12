@@ -17,7 +17,7 @@ Frenet-frame Model Predictive Controller for F1TENTH autonomous racing, solved i
 
 ## Demo
 
-[Watch on Google Drive](https://drive.google.com/file/d/1zbCONLosUmZUjjdu5uyIAF7fB7yYjxUH/view?usp=sharing)
+[FRENET MPC ON CAR](https://youtube.com/shorts/HqMdWvJWUbM)
 
 ---
 
