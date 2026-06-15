@@ -179,3 +179,4 @@ ros2 topic echo /frenet_mpc/solve_time_ms
 | `w_ey` | 35 | Centerline tracking tightness |
 | `obs_safety_margin` | 0.15 m | Clearance around opponent |
 | `track_wall_margin` | 0.30 m | Clearance from walls |
+ 
