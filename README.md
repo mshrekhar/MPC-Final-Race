@@ -11,7 +11,6 @@ Frenet-frame Model Predictive Controller for F1TENTH autonomous racing, solved i
 | Milan Manoj | milanmnj@seas.upenn.edu |
 | Manasi Shrekhar | mshrek@seas.upenn.edu |
 | Eric Ouyang | eouyang@seas.upenn.edu |
-| Jackson Wang | yxjacksn@seas.upenn.edu |
 
 ---
 
